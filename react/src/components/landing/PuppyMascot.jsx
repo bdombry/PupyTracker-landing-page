@@ -1,7 +1,8 @@
 import React from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 
-export default function PuppyMascot({ size = 'md', expression = 'happy', className = '' }) {
+export default function PuppyMascot({ size = 'md', className = '' }) {
   const sizes = {
     sm: 80,
     md: 120,
@@ -24,3 +25,5 @@ export default function PuppyMascot({ size = 'md', expression = 'happy', classNa
     />
   );
 }
+
+

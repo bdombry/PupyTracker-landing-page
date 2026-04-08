@@ -1,26 +1,27 @@
 import React from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 import PuppyMascot from './PuppyMascot';
 
 export default function CTASection() {
   return (
-    <section className="py-24 bg-gradient-to-b from-[#FFF9F4] to-[#F7C7D9]/30">
+    <section className="py-24 bg-gradient-to-b from-[#F5F5F5] to-[#3B82F6]/30">
       <div className="container mx-auto px-4">
         <motion.div
-          className="relative bg-gradient-to-br from-[#F7C7D9]/40 via-[#CFEFEA]/40 to-[#BFD9FF]/40 rounded-[3rem] p-8 md:p-16 overflow-hidden"
+          className="relative bg-gradient-to-br from-[#3B82F6]/40 via-[#BFDBFE]/40 to-[#DBEAFE]/40 rounded-[3rem] p-8 md:p-16 overflow-hidden"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
           {/* Decorative blobs */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-[#F7C7D9] rounded-full opacity-20 blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#BFD9FF] rounded-full opacity-20 blur-3xl" />
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#3B82F6] rounded-full opacity-20 blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#DBEAFE] rounded-full opacity-20 blur-3xl" />
           
           <div className="relative z-10 flex flex-col lg:flex-row items-center gap-12">
             {/* Content */}
             <div className="flex-1 text-center lg:text-left">
               <motion.h2
-                className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#A67C52] mb-6 leading-tight"
+                className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3B82F6] mb-6 leading-tight"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -30,7 +31,7 @@ export default function CTASection() {
               </motion.h2>
               
               <motion.p
-                className="text-lg text-[#A67C52]/80 mb-8 max-w-xl mx-auto lg:mx-0"
+                className="text-lg text-[#3B82F6]/80 mb-8 max-w-xl mx-auto lg:mx-0"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -49,7 +50,7 @@ export default function CTASection() {
               >
                 <motion.a
                   href="#"
-                  className="flex items-center justify-center gap-3 bg-[#A67C52] text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg shadow-[#A67C52]/30 hover:shadow-xl hover:shadow-[#A67C52]/40 transition-all"
+                  className="flex items-center justify-center gap-3 bg-[#3B82F6] text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg shadow-[#3B82F6]/30 hover:shadow-xl hover:shadow-[#3B82F6]/40 transition-all"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -61,7 +62,7 @@ export default function CTASection() {
                 
                 <motion.a
                   href="#"
-                  className="flex items-center justify-center gap-3 bg-white border-2 border-[#A67C52] text-[#A67C52] px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-[#A67C52]/5 transition-all"
+                  className="flex items-center justify-center gap-3 bg-white border-2 border-[#3B82F6] text-[#3B82F6] px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-[#3B82F6]/5 transition-all"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -82,15 +83,15 @@ export default function CTASection() {
               >
                 <div className="flex items-center gap-2">
                   <span className="text-2xl">✅</span>
-                  <span className="text-[#A67C52] font-medium">100% gratuit</span>
+                  <span className="text-[#3B82F6] font-medium">100% gratuit</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-2xl">🔒</span>
-                  <span className="text-[#A67C52] font-medium">Données sécurisées</span>
+                  <span className="text-[#3B82F6] font-medium">Données sécurisées</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-2xl">💚</span>
-                  <span className="text-[#A67C52] font-medium">Sans publicité</span>
+                  <span className="text-[#3B82F6] font-medium">Sans publicité</span>
                 </div>
               </motion.div>
             </div>
@@ -101,7 +102,7 @@ export default function CTASection() {
               animate={{ y: [0, -15, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             >
-              <PuppyMascot size="xl" expression="excited" />
+              <PuppyMascot size="xl" />
             </motion.div>
           </div>
         </motion.div>

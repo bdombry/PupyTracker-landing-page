@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
@@ -45,7 +46,7 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
   
   return (
-    <section id="faq" className="py-24 bg-[#FFF9F4]">
+    <section id="faq" className="py-24 bg-[#F5F5F5]">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -53,13 +54,13 @@ export default function FAQSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <span className="inline-block bg-[#CFEFEA]/50 text-[#A67C52] px-4 py-2 rounded-full text-sm font-medium mb-4">
+          <span className="inline-block bg-[#BFDBFE]/50 text-[#3B82F6] px-4 py-2 rounded-full text-sm font-medium mb-4">
             ❓ FAQ
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#A67C52] mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#3B82F6] mb-4">
             Questions fréquentes
           </h2>
-          <p className="text-[#A67C52]/70 text-lg max-w-2xl mx-auto">
+          <p className="text-[#3B82F6]/70 text-lg max-w-2xl mx-auto">
             Tout ce que vous devez savoir sur l'éducation à la propreté et PupyTracker
           </p>
         </motion.div>
@@ -68,17 +69,17 @@ export default function FAQSection() {
           {faqs.map((faq, index) => (
             <motion.div
               key={index}
-              className="bg-white rounded-2xl border border-[#F7C7D9]/30 overflow-hidden shadow-sm"
+              className="bg-white rounded-2xl border border-[#3B82F6]/30 overflow-hidden shadow-sm"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
             >
               <button
-                className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-[#FFF9F4]/50 transition-colors"
+                className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-[#F5F5F5]/50 transition-colors"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
-                <span className="text-[#A67C52] font-semibold pr-4">
+                <span className="text-[#3B82F6] font-semibold pr-4">
                   {faq.question}
                 </span>
                 <motion.div
@@ -86,7 +87,7 @@ export default function FAQSection() {
                   transition={{ duration: 0.2 }}
                   className="flex-shrink-0"
                 >
-                  <ChevronDown className="w-5 h-5 text-[#A67C52]" />
+                  <ChevronDown className="w-5 h-5 text-[#3B82F6]" />
                 </motion.div>
               </button>
               
@@ -98,7 +99,7 @@ export default function FAQSection() {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className="px-6 pb-5 text-[#A67C52]/80 leading-relaxed border-t border-[#F7C7D9]/20 pt-4">
+                    <div className="px-6 pb-5 text-[#3B82F6]/80 leading-relaxed border-t border-[#3B82F6]/20 pt-4">
                       {faq.answer}
                     </div>
                   </motion.div>
@@ -111,3 +112,4 @@ export default function FAQSection() {
     </section>
   );
 }
+
