@@ -37,78 +37,16 @@ export default function FeaturesSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left - Phone mockup */}
           <motion.div
-            className="relative order-2 lg:order-1"
+            className="relative order-2 lg:order-1 flex justify-center"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <div className="relative mx-auto w-fit">
-              {/* Phone */}
-              <div className="relative w-[260px] h-[520px] bg-gray-900 rounded-[2.5rem] p-2.5 shadow-2xl mx-auto">
-                <div className="w-full h-full bg-[#F5F5F5] rounded-[2rem] overflow-hidden">
-                  {/* App screen - Stats view */}
-                  <div className="h-8 bg-[#BFDBFE] flex items-center justify-center">
-                    <span className="text-[#3B82F6] text-xs font-medium">9:41</span>
-                  </div>
-                  
-                  <div className="bg-[#BFDBFE] px-4 pb-4 pt-2">
-                    <h4 className="text-[#3B82F6] font-bold text-center">Statistiques</h4>
-                  </div>
-                  
-                  <div className="p-4 space-y-4">
-                    {/* Weekly chart placeholder */}
-                    <div className="bg-white rounded-2xl p-4 shadow-sm">
-                      <p className="text-[#3B82F6] font-semibold text-sm mb-3">Cette semaine</p>
-                      <div className="flex items-end justify-between h-24 px-2">
-                        {['L', 'M', 'M', 'J', 'V', 'S', 'D'].map((day, i) => (
-                          <div key={i} className="flex flex-col items-center gap-1">
-                            <div 
-                              className="w-6 bg-gradient-to-t from-[#3B82F6] to-[#DBEAFE] rounded-t-lg"
-                              style={{ height: `${30 + (i % 5) * 10}px` }}
-                            />
-                            <span className="text-[8px] text-[#3B82F6]/60">{day}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                    
-                    {/* Stats summary */}
-                    <div className="grid grid-cols-2 gap-2">
-                      <div className="bg-[#3B82F6]/30 rounded-xl p-3">
-                        <p className="text-[#3B82F6] font-bold text-xl">23</p>
-                        <p className="text-[#3B82F6]/70 text-[10px]">Sorties réussies</p>
-                      </div>
-                      <div className="bg-[#BFDBFE]/30 rounded-xl p-3">
-                        <p className="text-[#3B82F6] font-bold text-xl">3</p>
-                        <p className="text-[#3B82F6]/70 text-[10px]">Accidents</p>
-                      </div>
-                    </div>
-                    
-                    {/* Achievement */}
-                    <div className="bg-gradient-to-r from-[#DBEAFE]/30 to-[#3B82F6]/30 rounded-2xl p-4 flex items-center gap-3">
-                      <span className="text-3xl">🏆</span>
-                      <div>
-                        <p className="text-[#3B82F6] font-semibold text-sm">Semaine record !</p>
-                        <p className="text-[#3B82F6]/70 text-xs">88% de propreté</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute top-2.5 left-1/2 -translate-x-1/2 w-20 h-5 bg-gray-900 rounded-full" />
-              </div>
-              
-              {/* Decorative elements */}
-              <motion.div
-                className="absolute -top-8 -right-8 w-32 h-32 bg-[#3B82F6] rounded-full opacity-30 blur-2xl"
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 4, repeat: Infinity }}
-              />
-              <motion.div
-                className="absolute -bottom-8 -left-8 w-40 h-40 bg-[#DBEAFE] rounded-full opacity-30 blur-2xl"
-                animate={{ scale: [1, 1.1, 1] }}
-                transition={{ duration: 5, repeat: Infinity, delay: 1 }}
-              />
-            </div>
+            <img 
+              src="/PupyTracker_analyticscreen-portrait.png" 
+              alt="PupyTracker Analytics Screenshot" 
+              className="w-[350px] h-[700px] object-cover"
+            />
           </motion.div>
           
           {/* Right - Features list */}

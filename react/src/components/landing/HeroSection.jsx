@@ -79,10 +79,7 @@ export default function HeroSection() {
                 <span className="text-2xl">📱</span>
                 <span className="text-[#3B82F6] font-medium">Pour tous les chiots</span>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">✨</span>
-                <span className="text-[#3B82F6] font-medium">100% gratuit</span>
-              </div>
+
             </motion.div>
           </motion.div>
 

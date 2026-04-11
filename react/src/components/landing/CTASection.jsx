@@ -71,10 +71,7 @@ export default function CTASection() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
               >
-                <div className="flex items-center gap-2">
-                  <span className="text-2xl">✅</span>
-                  <span className="text-[#3B82F6] font-medium">100% gratuit</span>
-                </div>
+
                 <div className="flex items-center gap-2">
                   <span className="text-2xl">🔒</span>
                   <span className="text-[#3B82F6] font-medium">Données sécurisées</span>
